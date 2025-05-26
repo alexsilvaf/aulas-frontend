@@ -1,23 +1,28 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-	<head>
-		<meta charset="UTF-8">
-		<title>Meu conteudo</title>
-	</head>
-	<body>
-		<h1>Titulo do meu site</h1>
-		<h3>Titulo do meu site</h3>
-		<h6>Titulo do meu site</h6>
-		<input type="button" value="Meu botão"/>
-		<br>
-		<input type="text" />
-		<br>
-		<input type="date" />
-		<p></p>
-		<span>Meu texto 2</span>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Meu conteudo</title>
+</head>
+
+<body>
+	<header>
+		<h1>Dados pessoais</h1>
+	</header>
+	<main>
+		<span>Este formulário gostaria de obter informações pessoais de você :)</span>
 		<form>
-			<label for="primeiroElemento">Meu primeiro texto</label>
-			<input type="text" id="primeiroElemento"/>
+			<label for="nome">Qual o seu nome?</label>
+			<input type="text" name="nome" id="nome" required>
+			<label for="anos">Quantos anos você tem?</label>
+			<input type="number" name="anos" id="anos" required>
+			<label for="historiaVida">Qual a sua historia de vida?</label>
+			<textarea name="historiaVida" id="historiaVida"></textarea>
+			<button type="submit">Enviar</button>
 		</form>
-	</body>
+	</main>
+	<footer>Obrigado por acessar</footer>
+</body>
+
 </html>
